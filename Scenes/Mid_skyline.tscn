@@ -1,0 +1,901 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Assets/IMGs/city_scape_02.png" type="Texture" id=1]
+[ext_resource path="res://Assets/IMGs/ellipse.png" type="Texture" id=2]
+[ext_resource path="res://Animations/flash01.tres" type="Animation" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.04, 0.04 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.415686, 0.192157, 0.552941, 0 ), Color( 0.627451, 0.0156863, 1, 0.454902 ), Color( 0.415686, 0.192157, 0.552941, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.08, 0.08 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.04, 0.04 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "flash"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.176471, 0.74902, 0.156863, 0 ), Color( 0.176471, 0.74902, 0.156863, 0.298039 ), Color( 0.12549, 0.909804, 0.0980392, 0.196078 ), Color( 0.176471, 0.74902, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.11, 0.11 ), Vector2( 0.08, 0.08 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.04, 0.04 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.415686, 0.192157, 0.552941, 0 ), Color( 1, 0.0156863, 0.313726, 0.454902 ), Color( 0.415686, 0.192157, 0.552941, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.08, 0.08 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.04, 0.04 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.415686, 0.192157, 0.552941, 0 ), Color( 0.627451, 0.0156863, 1, 0.454902 ), Color( 0.415686, 0.192157, 0.552941, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.08, 0.08 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "flash"
+length = 3.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.454902, 0.713726, 0.784314, 0 ), Color( 0, 0.807843, 0.996078, 0.298039 ), Color( 0, 0.701961, 1, 0.196078 ), Color( 0.0235294, 0.54902, 0.933333, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2, 3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.11, 0.11 ), Vector2( 0.08, 0.08 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.06, 0.06 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.74902, 0.156863, 0.156863, 0 ), Color( 0.74902, 0.156863, 0.156863, 0.454902 ), Color( 0.74902, 0.156863, 0.156863, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.04, 0.04 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "flash"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.415686, 0.192157, 0.552941, 0 ), Color( 0.8, 0.0823529, 0.823529, 0.454902 ), Color( 0.415686, 0.192157, 0.552941, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.006, 0.006 ), Vector2( 0.11, 0.11 ), Vector2( 0.006, 0.006 ) ]
+}
+
+[node name="TextureRect" type="TextureRect"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+grow_horizontal = 2
+texture = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.20826 )
+position = Vector2( 121.7, 371.74 )
+scale = Vector2( 0.0307219, 0.0307219 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+autoplay = "flash01"
+anims/flash01 = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.294505 )
+position = Vector2( 282.842, 371.312 )
+scale = Vector2( 0.0409598, 0.0409598 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 1 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.055738 )
+position = Vector2( 326.985, 383.701 )
+scale = Vector2( 0.0101659, 0.0101659 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 2 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.617465, 0.024008, 0.978918, 0.43345 )
+position = Vector2( 181.611, 245.055 )
+scale = Vector2( 0.0765104, 0.0765104 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite4"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.103328 )
+position = Vector2( 330.413, 492.931 )
+scale = Vector2( 0.0182658, 0.0182658 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite5"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 4 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.451857 )
+position = Vector2( 490.858, 492.385 )
+scale = Vector2( 0.0596385, 0.0596385 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite6"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 5 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.374533 )
+position = Vector2( 535.076, 504.656 )
+scale = Vector2( 0.0339931, 0.0339931 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite7"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 6 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.131089, 0.892145, 0.1045, 0.207277 )
+position = Vector2( 468.29, 419.828 )
+scale = Vector2( 0.083295, 0.083295 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite8"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 7 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.303534 )
+position = Vector2( 762.924, 205.85 )
+scale = Vector2( 0.0420316, 0.0420316 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite9"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 8 )
+
+[node name="Sprite10" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.174554 )
+position = Vector2( 923.994, 205.432 )
+scale = Vector2( 0.0267207, 0.0267207 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite10"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 9 )
+
+[node name="Sprite11" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.0036447 )
+position = Vector2( 968.007, 217.846 )
+scale = Vector2( 0.00627241, 0.00627241 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite11"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 10 )
+
+[node name="Sprite12" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.954678, 0.0293741, 0.33228, 0.419618 )
+position = Vector2( 822.598, 79.082 )
+scale = Vector2( 0.0742602, 0.0742602 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite12"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 11 )
+
+[node name="Sprite13" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.416719 )
+position = Vector2( 1146.93, 159.039 )
+scale = Vector2( 0.0554674, 0.0554674 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite13"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 12 )
+
+[node name="Sprite14" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.417283 )
+position = Vector2( 1307.99, 158.402 )
+scale = Vector2( 0.0555344, 0.0555344 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite14"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 13 )
+
+[node name="Sprite15" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.352954 )
+position = Vector2( 1351.94, 170.882 )
+scale = Vector2( 0.0323803, 0.0323803 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite15"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 14 )
+
+[node name="Sprite16" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.297155 )
+position = Vector2( 1129.97, 628.398 )
+scale = Vector2( 0.0412744, 0.0412744 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite16"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 15 )
+
+[node name="Sprite17" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.317908 )
+position = Vector2( 970.236, 628.85 )
+scale = Vector2( 0.0437378, 0.0437378 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite17"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 16 )
+
+[node name="Sprite18" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.62109, 0.0209873, 0.986571, 0.441237 )
+position = Vector2( 1206.36, 32.0973 )
+scale = Vector2( 0.0777771, 0.0777771 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite18"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 17 )
+
+[node name="Sprite19" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.00828226, 0.648126, 0.976534, 0.12706 )
+position = Vector2( 1273.76, 115.557 )
+scale = Vector2( 0.0539523, 0.0539523 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite19"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 18 )
+
+[node name="Sprite20" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.43745 )
+position = Vector2( 1711.99, 337.037 )
+scale = Vector2( 0.0579283, 0.0579283 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite20"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 19 )
+
+[node name="Sprite21" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.00886073 )
+position = Vector2( 1873.09, 336.402 )
+scale = Vector2( 0.00705183, 0.00705183 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite21"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 20 )
+
+[node name="Sprite22" type="Sprite" parent="."]
+editor/display_folded = true
+self_modulate = Color( 0.74902, 0.156863, 0.156863, 0.327367 )
+position = Vector2( 1917.31, 348.763 )
+scale = Vector2( 0.0304679, 0.0304679 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite22"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 21 )
+
+[node name="Sprite23" type="Sprite" parent="."]
+self_modulate = Color( 0.538591, 0.157041, 0.639476, 0.145479 )
+position = Vector2( 1771.35, 210.62 )
+scale = Vector2( 0.0392595, 0.0392595 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite23"]
+autoplay = "flash01"
+anims/flash01 = SubResource( 22 )

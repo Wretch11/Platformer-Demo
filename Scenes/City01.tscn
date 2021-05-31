@@ -1,0 +1,429 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://Scripts/Maps.gd" type="Script" id=1]
+[ext_resource path="res://Assets/IMGs/gradient_city_night.png" type="Texture" id=2]
+[ext_resource path="res://Assets/IMGs/city_moon.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/ParallaxClouds.gd" type="Script" id=4]
+[ext_resource path="res://Assets/IMGs/clouds.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Back_Skyline.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Mid_skyline.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/IMGs/city_scape_01.png" type="Texture" id=8]
+[ext_resource path="res://Assets/IMGs/wire.png" type="Texture" id=9]
+[ext_resource path="res://Assets/IMGs/shock.png" type="Texture" id=10]
+[ext_resource path="res://Assets/IMGs/elec_pole.png" type="Texture" id=11]
+[ext_resource path="res://Assets/IMGs/roofftop_01.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Level_Exit.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scripts/Power_Item_Collectible.gd" type="Script" id=14]
+[ext_resource path="res://Assets/IMGs/player_sprite_atlas.png" type="Texture" id=15]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=16]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 4
+
+[sub_resource type="Curve2D" id=3]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -1074.3, 172.094, 0, 0, 0, 0, -1074.3, 172.094, 0, 0, 0, 0, -943.378, 183.984, 0, 0, 0, 0, -835.049, 193.036, 0, 0, 0, 0, -724.094, 201.504, 0, 0, 0, 0, -625.985, 208.219, 0, 0, 0, 0, -529.921, 212.599, 0, 0, 0, 0, -436.777, 215.811, 0, 0, 0, 0, -350.348, 217.563, 0, 0, 0, 0, -259.54, 217.855, 0, 0, 0, 0, -174.279, 216.979, 0, 0, 0, 0, -88.4341, 215.519, 0, 0, 0, 0, 5.10215, 211.433, 0, 0, 0, 0, 95.1832, 207.196, 0, 0, 0, 0, 202.876, 199.743, 0, 0, 0, 0, 337.557, 188.562, 0, 0, 0, 0, 487.659, 173.655, 0, 0, 0, 0, 701.315, 162.588, 0, 0, 0, 0, 768.608, 168.847, 0, 0, 0, 0, 831.744, 174.367, 0, 0, 0, 0, 904.82, 180.44, 0, 0, 0, 0, 978.08, 186.881, 0, 0, 0, 0, 1071.22, 193.874, 0, 0, 0, 0, 1144.11, 198.659, 0, 0, 0, 0, 1243.51, 203.26, 0, 0, 0, 0, 1327.81, 206.388, 0, 0, 0, 0, 1414.51, 208.412, 0, 0, 0, 0, 1500.29, 208.964, 0, 0, 0, 0, 1575.76, 209.148, 0, 0, 0, 0, 1670.37, 206.94, 0, 0, 0, 0, 1748.96, 204.364, 0, 0, 0, 0, 1839.16, 199.579, 0, 0, 0, 0, 1956.04, 191.666, 0, 0, 0, 0, 2060.41, 183.753, 0, 0, 0, 0, 2108.09, 178.6, 0, 0, 0, 0, 2301.54, 166.638, 0, 0, 0, 0, 2406.83, 176.576, 0, 0, 0, 0, 2508.62, 185.041, 0, 0, 0, 0, 2624.59, 194.058, 0, 0, 0, 0, 2718.46, 199.947, 0, 0, 0, 0, 2812.52, 204.548, 0, 0, 0, 0, 2916.52, 207.492, 0, 0, 0, 0, 3013.53, 209.516, 0, 0, 0, 0, 3105.56, 209.332, 0, 0, 0, 0, 3222.63, 207.124, 0, 0, 0, 0, 3333.63, 203.075, 0, 0, 0, 0, 3436.52, 197.003, 0, 0, 0, 0, 3550.65, 188.537, 0, 0, 0, 0, 3689.25, 176.208, 0, 0, 0, 0, 3901.67, 168.847, 0, 0, 0, 0, 3993.48, 177.709, 0, 0, 0, 0, 4103.31, 187.901, 0, 0, 0, 0, 4205.72, 195.314, 0, 0, 0, 0, 4343.81, 204.58, 0, 0, 0, 0, 4456.88, 209.676, 0, 0, 0, 0, 4597.76, 214.309, 0, 0, 0, 0, 4745.12, 214.309, 0, 0, 0, 0, 4895.26, 210.602, 0, 0, 0, 0, 5044.01, 203.19, 0, 0, 0, 0, 5189.99, 192.534, 0, 0, 0, 0, 5306.3, 182.805, 0, 0, 0, 0, 5504.17, 165.2, 0, 0, 0, 0, 5719.65, 185.122, 0, 0, 0, 0, 5943.94, 200.873, 0, 0, 0, 0, 6150.62, 209.213, 0, 0, 0, 0, 6342.47, 209.213, 0, 0, 0, 0, 6512.07, 205.043, 0, 0, 0, 0, 6719.21, 193.461, 0, 0, 0, 0, 6885.11, 179.562, 0, 0, 0, 0, 7067.23, 162.42 )
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("WirePath2D/PathFollow2D/Electricity:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.3
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("WirePath2D2/PathFollow2D/Electricity:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 4.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("WirePath2D/PathFollow2D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 8157.65 ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("WirePath2D2/PathFollow2D:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 8157.65 ]
+}
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 511.66, 32.8255 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 37.4819, 36.7952 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 435.102, 14.2104 )
+
+[node name="City01" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="GradientLayer" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="Gradient" type="TextureRect" parent="GradientLayer"]
+self_modulate = Color( 0, 1, 0.392157, 1 )
+material = SubResource( 1 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SkyLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="SkyLayer"]
+margin_left = 1536.87
+margin_top = 23.4
+margin_right = 2236.87
+margin_bottom = 723.4
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+layer = -1
+script = ExtResource( 4 )
+
+[node name="ParallaxLayer_Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.05, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer_Sky"]
+self_modulate = Color( 1, 1, 1, 0.623529 )
+material = SubResource( 2 )
+margin_top = -176.0
+margin_right = 1920.0
+margin_bottom = 224.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxLayer_Rear" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="TextureRect" parent="ParallaxBackground/ParallaxLayer_Rear" instance=ExtResource( 6 )]
+
+[node name="ParallaxLayer_Mid" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="TextureRect" parent="ParallaxBackground/ParallaxLayer_Mid" instance=ExtResource( 7 )]
+
+[node name="Highway" type="CPUParticles2D" parent="ParallaxBackground/ParallaxLayer_Mid"]
+self_modulate = Color( 0.552941, 0.470588, 0.470588, 1 )
+position = Vector2( 2528.18, 856.407 )
+rotation = 1.5708
+amount = 100
+lifetime = 7.5
+preprocess = 60.0
+speed_scale = 0.25
+fixed_fps = 60
+emission_shape = 1
+emission_sphere_radius = 85.0
+spread = 180.0
+initial_velocity = 0.3
+angle = 90.0
+scale_amount = 2.0
+scale_amount_random = 1.0
+hue_variation = 0.84
+hue_variation_random = 1.0
+
+[node name="ParallaxLayer_Fore" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 1920, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer_Fore"]
+margin_top = 799.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 8 )
+
+[node name="Foreground" type="Node2D" parent="."]
+
+[node name="Poles" type="Node2D" parent="Foreground"]
+
+[node name="Wire" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 1494.64, 187.523 )
+texture = ExtResource( 9 )
+
+[node name="Wire7" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( -278.604, 196.521 )
+texture = ExtResource( 9 )
+
+[node name="Wire8" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( -302.618, 272.564 )
+texture = ExtResource( 9 )
+
+[node name="Wire3" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 3046.66, 187.523 )
+texture = ExtResource( 9 )
+
+[node name="Wire5" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 4672.89, 192.578 )
+texture = ExtResource( 9 )
+
+[node name="Wire6" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 4656.47, 258.25 )
+texture = ExtResource( 9 )
+
+[node name="Wire9" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 6266.47, 258.25 )
+texture = ExtResource( 9 )
+
+[node name="Wire10" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 6266.47, 188.25 )
+texture = ExtResource( 9 )
+
+[node name="Wire4" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 2968.11, 259.634 )
+texture = ExtResource( 9 )
+
+[node name="Wire2" type="Sprite" parent="Foreground/Poles"]
+position = Vector2( 1387.35, 259.045 )
+texture = ExtResource( 9 )
+
+[node name="WirePath2D" type="Path2D" parent="Foreground/Poles"]
+position = Vector2( 0.117798, 0 )
+scale = Vector2( 0.999758, 1 )
+curve = SubResource( 3 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Foreground/Poles/WirePath2D"]
+position = Vector2( -1074.3, 172.094 )
+rotation = 0.0905743
+
+[node name="Electricity" type="Sprite" parent="Foreground/Poles/WirePath2D/PathFollow2D"]
+position = Vector2( 2.22144, -0.558884 )
+rotation = 0.148353
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 10 )
+vframes = 8
+hframes = 4
+frame = 2
+
+[node name="WirePath2D2" type="Path2D" parent="Foreground/Poles"]
+position = Vector2( 0.117798, 77 )
+scale = Vector2( 0.999758, 1 )
+curve = SubResource( 3 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Foreground/Poles/WirePath2D2"]
+position = Vector2( -1074.3, 172.094 )
+rotation = 0.0905743
+
+[node name="Electricity" type="Sprite" parent="Foreground/Poles/WirePath2D2/PathFollow2D"]
+position = Vector2( 2.22144, -0.558884 )
+rotation = 0.148353
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 10 )
+vframes = 8
+hframes = 4
+frame = 2
+
+[node name="Sprite" type="Sprite" parent="Foreground/Poles"]
+self_modulate = Color( 0.533333, 0.411765, 0.14902, 1 )
+position = Vector2( 584, 643.334 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="Sprite2" type="Sprite" parent="Foreground/Poles"]
+self_modulate = Color( 0.533333, 0.411765, 0.14902, 1 )
+position = Vector2( 2184, 643.334 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="Sprite3" type="Sprite" parent="Foreground/Poles"]
+self_modulate = Color( 0.533333, 0.411765, 0.14902, 1 )
+position = Vector2( 3784, 643.334 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="Sprite4" type="Sprite" parent="Foreground/Poles"]
+self_modulate = Color( 0.533333, 0.411765, 0.14902, 1 )
+position = Vector2( 5384, 643.334 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 11 )
+
+[node name="BoltAnim" type="AnimationPlayer" parent="Foreground/Poles"]
+autoplay = "Electricity "
+"anims/Electricity " = SubResource( 4 )
+
+[node name="BoltAnim2" type="AnimationPlayer" parent="Foreground/Poles"]
+autoplay = "Electricity "
+"anims/Electricity " = SubResource( 5 )
+
+[node name="BoltTravelAnim" type="AnimationPlayer" parent="Foreground/Poles"]
+autoplay = "Elec_Travel"
+anims/Elec_Travel = SubResource( 6 )
+
+[node name="BoltTravelAnim2" type="AnimationPlayer" parent="Foreground/Poles"]
+autoplay = "Elec_Travel"
+anims/Elec_Travel = SubResource( 7 )
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Rooftop" type="StaticBody2D" parent="Ground"]
+position = Vector2( 798.893, 13.9138 )
+
+[node name="TextureRect" type="TextureRect" parent="Ground/Rooftop"]
+self_modulate = Color( 0.54902, 0.54902, 0.54902, 1 )
+margin_left = -280.0
+margin_top = 1016.0
+margin_right = 744.0
+margin_bottom = 1080.0
+texture = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Rooftop"]
+position = Vector2( 232.322, 1049.49 )
+shape = SubResource( 8 )
+
+[node name="Rooftop2" type="StaticBody2D" parent="Ground"]
+position = Vector2( 2491.15, -0.379395 )
+
+[node name="TextureRect" type="TextureRect" parent="Ground/Rooftop2"]
+self_modulate = Color( 0.611765, 0.545098, 0.698039, 1 )
+margin_left = -280.0
+margin_top = 1016.0
+margin_right = 744.0
+margin_bottom = 1080.0
+texture = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Rooftop2"]
+position = Vector2( 232.322, 1049.49 )
+shape = SubResource( 8 )
+
+[node name="Rooftop3" type="StaticBody2D" parent="Ground"]
+position = Vector2( 4240.36, 3.6051 )
+
+[node name="TextureRect" type="TextureRect" parent="Ground/Rooftop3"]
+self_modulate = Color( 0.54902, 0.54902, 0.54902, 1 )
+margin_left = -280.0
+margin_top = 1016.0
+margin_right = 744.0
+margin_bottom = 1080.0
+texture = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/Rooftop3"]
+position = Vector2( 232.322, 1049.49 )
+shape = SubResource( 8 )
+
+[node name="LevelExit" parent="." instance=ExtResource( 13 )]
+position = Vector2( 4876.88, 948.994 )
+
+[node name="PowerUps" type="Node2D" parent="."]
+
+[node name="Power_Item_Collectible" type="Area2D" parent="PowerUps"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 14 )
+power_name = "Parachute"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PowerUps/Power_Item_Collectible"]
+position = Vector2( 1011.97, 712.714 )
+shape = SubResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="PowerUps/Power_Item_Collectible"]
+position = Vector2( 1011.67, 710.321 )
+scale = Vector2( 5, 5 )
+texture = ExtResource( 15 )
+vframes = 5
+hframes = 6
+frame = 5
+
+[node name="Player" parent="." instance=ExtResource( 16 )]
+modulate = Color( 0.639216, 0.639216, 0.639216, 1 )
+position = Vector2( 1007.37, 990.072 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 0, -450 )
+current = true
+limit_bottom = 1530
+drag_margin_top = 1.0
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Boundaries"]
+position = Vector2( 327.657, 1186.26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Area2D"]
+shape = SubResource( 10 )
+
+[node name="Area2D2" type="Area2D" parent="Boundaries"]
+position = Vector2( 1937.66, 1186.26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Area2D2"]
+shape = SubResource( 10 )
+
+[node name="Area2D3" type="Area2D" parent="Boundaries"]
+position = Vector2( 3604.64, 1186 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Area2D3"]
+shape = SubResource( 10 )
+
+[node name="Area2D4" type="Area2D" parent="Boundaries"]
+position = Vector2( 5372.07, 1186 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Area2D4"]
+shape = SubResource( 10 )
+
+[node name="Area2D5" type="Area2D" parent="Boundaries"]
+position = Vector2( 6247.42, 1186 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundaries/Area2D5"]
+shape = SubResource( 10 )
+[connection signal="body_entered" from="PowerUps/Power_Item_Collectible" to="." method="_on_Power_Item_Parachute_body_entered"]
+[connection signal="body_exited" from="Boundaries/Area2D" to="." method="_on_Floor_body_exited"]
+[connection signal="body_exited" from="Boundaries/Area2D2" to="." method="_on_Floor_body_exited"]
+[connection signal="body_exited" from="Boundaries/Area2D3" to="." method="_on_Floor_body_exited"]
+[connection signal="body_exited" from="Boundaries/Area2D4" to="." method="_on_Floor_body_exited"]
+[connection signal="body_exited" from="Boundaries/Area2D5" to="." method="_on_Floor_body_exited"]

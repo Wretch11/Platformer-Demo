@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/PowerDash.gd" type="Script" id=1]
+[ext_resource path="res://Assets/IMGs/Power_Dash_Atlas.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Dash"
+length = 0.2
+loop = true
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.06, 0.13, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 0, 1 ]
+}
+
+[node name="PowerDash" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 4, 4 )
+texture = ExtResource( 2 )
+hframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Dash"
+anims/Dash = SubResource( 1 )
+
+[node name="DashTimer" type="Timer" parent="."]
+wait_time = 0.35
+one_shot = true
+
+[node name="Raycasts" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
+position = Vector2( 69, 3 )
+enabled = true
+cast_to = Vector2( 100, 0 )
+[connection signal="timeout" from="DashTimer" to="." method="_on_DashTimer_timeout"]

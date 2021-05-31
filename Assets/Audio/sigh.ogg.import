@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sigh.ogg-1d650041afae81184b9dc85281158962.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/sigh.ogg"
+dest_files=[ "res://.import/sigh.ogg-1d650041afae81184b9dc85281158962.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/WretchedGamesSplash.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/PauseScene.tscn" type="PackedScene" id=3]
+
+[node name="Game" type="Node2D"]
+pause_mode = 2
+script = ExtResource( 1 )
+
+[node name="Level" type="Node2D" parent="."]
+pause_mode = 1
+
+[node name="WretchedGamesSplash" parent="Level" instance=ExtResource( 2 )]
+
+[node name="UI_Layer" type="CanvasLayer" parent="."]
+pause_mode = 1
+
+[node name="Available_Label" type="Label" parent="UI_Layer"]
+visible = false
+margin_left = 82.0
+margin_top = 23.0
+margin_right = 216.0
+margin_bottom = 37.0
+grow_vertical = 0
+rect_scale = Vector2( 2, 2 )
+text = "Available Power Ups:"
+valign = 1
+
+[node name="Selected_Label" type="Label" parent="UI_Layer"]
+visible = false
+margin_left = 82.0
+margin_top = 67.0
+margin_right = 122.0
+margin_bottom = 81.0
+grow_vertical = 0
+rect_scale = Vector2( 2, 2 )
+valign = 1
+
+[node name="PauseLayer" type="CanvasLayer" parent="."]
+pause_mode = 2
+
+[node name="PauseScene" parent="PauseLayer" instance=ExtResource( 3 )]
+visible = false
